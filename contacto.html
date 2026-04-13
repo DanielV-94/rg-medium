@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | RG Medium</title>
+  <meta name="description"
+    content="Solicita tu cotización con RG Medium. Atención rápida, trabajo garantizado y múltiples métodos de pago.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-page="contacto">
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">RG</span>
+        <span>
+          <strong>RG Medium</strong>
+          <small>Infraestructura & Soluciones Técnicas</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html" class="nav-link" data-page="inicio">Inicio</a>
+        <a href="servicios.html" class="nav-link" data-page="servicios">Servicios</a>
+        <a href="proyectos.html" class="nav-link" data-page="proyectos">Proyectos</a>
+        <a href="contacto.html" class="nav-link" data-page="contacto">Contacto</a>
+        <a href="#formulario" class="btn btn-primary nav-cta">Cotizar ahora</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero section-pad">
+      <div class="container split-page">
+        <div>
+          <p class="eyebrow reveal">Estamos listos para ayudarte</p>
+          <h1 class="hero-title reveal">Solicita tu cotización sin compromiso</h1>
+          <p class="hero-copy reveal">Cuéntanos qué necesitas y te responderemos con una propuesta clara en tiempo,
+            alcance e inversión.</p>
+          <div class="inline-pills reveal">
+            <span>✅ Trabajo garantizado</span>
+            <span>✅ Atención rápida</span>
+            <span>✅ Facturación disponible</span>
+          </div>
+        </div>
+        <img class="page-cover reveal"
+          src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80"
+          alt="Asesoría y atención al cliente">
+      </div>
+    </section>
+
+    <section class="section-pad" id="formulario">
+      <div class="container contact-layout">
+        <form class="contact-form reveal" id="contactForm">
+          <h2>Formulario de proyecto</h2>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="empresa">Empresa (opcional)</label>
+              <input type="text" id="empresa" name="empresa">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono / WhatsApp</label>
+              <input type="tel" id="telefono" name="telefono" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="servicio">Tipo de servicio</label>
+            <select id="servicio" name="servicio" required>
+              <option value="">Selecciona una opción</option>
+              <option value="aires">Mantenimiento de aires acondicionados</option>
+              <option value="herreria">Herrería</option>
+              <option value="albanileria">Albañilería y remodelación</option>
+              <option value="mantenimiento">Mantenimiento general</option>
+              <option value="integral">Proyecto integral</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="presupuesto">Presupuesto estimado</label>
+            <select id="presupuesto" name="presupuesto" required>
+              <option value="">Selecciona un rango</option>
+              <option value="8-10">$8,000 - $10,000 MXN</option>
+              <option value="10-12.5">$10,000 - $12,500 MXN</option>
+              <option value="12.5-15">$12,500 - $15,000 MXN</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="descripcion">Describe tu proyecto</label>
+            <textarea id="descripcion" name="descripcion" rows="5" required
+              placeholder="Ejemplo: necesito mantenimiento de 3 minisplits y reparación de una fuga..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-large">Enviar solicitud</button>
+          <p class="form-note">También puedes escribirnos directo al WhatsApp: <strong>984 130 3765</strong></p>
+        </form>
+
+        <aside class="contact-info reveal">
+          <h3>Canales de atención</h3>
+          <p><strong>Teléfono / WhatsApp:</strong> 984 130 3765</p>
+          <p><strong>Horario:</strong> Lunes a Sábado, 8:00 a 20:00</p>
+          <p><strong>Cobertura:</strong> Tu ciudad y alrededores</p>
+
+          <h4>Métodos de pago</h4>
+          <ul>
+            <li>💳 Tarjeta bancaria</li>
+            <li>🏦 Transferencia bancaria</li>
+            <li>💵 Efectivo</li>
+            <li>🧾 Facturación</li>
+          </ul>
+
+          <div class="mini-map">
+            <p>Atención en sitio con previa agenda y visita técnica.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>RG Medium</h3>
+        <p>Hacemos que tus espacios funcionen mejor.</p>
+      </div>
+      <div>
+        <h4>Enlaces</h4>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Proyectos</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>📲 984 130 3765</p>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year">2026</span> RG Medium.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

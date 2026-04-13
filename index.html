@@ -4,262 +4,204 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RG Medium | Infraestructura y Soluciones Técnicas</title>
+  <title>RG Medium | Soluciones Técnicas Premium</title>
   <meta name="description"
-    content="RG Medium: Soluciones profesionales en infraestructura, climatización, herrería y mantenimiento técnico. Calidad, confianza y ejecución garantizada.">
+    content="RG Medium: climatización, herrería, albañilería y mantenimiento integral para hogares y negocios con ejecución profesional.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body data-page="inicio">
+  <div class="scroll-progress" aria-hidden="true"></div>
 
-  <!-- HEADER -->
   <header class="header">
-    <div class="container">
-      <div class="header-content">
-        <div class="logo">
-          <h1>RG Medium</h1>
-          <p class="tagline">Infraestructura • Soluciones Técnicas • Confianza</p>
-        </div>
-        <nav class="nav">
-          <a href="#inicio" class="nav-link active">Inicio</a>
-          <a href="#servicios" class="nav-link">Servicios</a>
-          <a href="#capacidades" class="nav-link">Capacidades</a>
-          <a href="#contacto" class="nav-link">Contacto</a>
-        </nav>
-      </div>
+    <div class="container header-content">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">RG</span>
+        <span>
+          <strong>RG Medium</strong>
+          <small>Infraestructura & Soluciones Técnicas</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html" class="nav-link" data-page="inicio">Inicio</a>
+        <a href="servicios.html" class="nav-link" data-page="servicios">Servicios</a>
+        <a href="proyectos.html" class="nav-link" data-page="proyectos">Proyectos</a>
+        <a href="contacto.html" class="nav-link" data-page="contacto">Contacto</a>
+        <a href="contacto.html#formulario" class="btn btn-primary nav-cta">Cotizar ahora</a>
+      </nav>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero" id="inicio">
-    <div class="container">
-      <div class="hero-content">
-        <h2 class="hero-title">Soluciones Técnicas que se Ejecutan</h2>
-        <p class="hero-copy">
-          Desde climatización y herrería hasta mantenimiento preventivo y correctivo.
-          Trabajamos con empresas que valoran la confiabilidad, la precisión y los resultados medibles.
-        </p>
-        <div class="hero-buttons">
-          <a href="#contacto" class="btn btn-primary">Solicitar Propuesta</a>
-          <a href="#servicios" class="btn btn-secondary">Explorar Servicios</a>
+  <main>
+    <section class="hero section-pad">
+      <div class="container hero-layout">
+        <div>
+          <p class="eyebrow reveal">Soluciones técnicas de nivel profesional</p>
+          <h1 class="hero-title reveal">Tu proyecto en manos expertas, con ejecución real y garantía.</h1>
+          <p class="hero-copy reveal">
+            Integramos climatización, herrería, albañilería y mantenimiento general en propuestas claras, medibles y
+            con tiempos definidos para hogar y negocio.
+          </p>
+          <div class="hero-actions reveal">
+            <a href="contacto.html#formulario" class="btn btn-primary">Solicitar propuesta</a>
+            <a href="proyectos.html" class="btn btn-ghost">Ver proyectos</a>
+          </div>
+
+          <div class="stats-grid reveal">
+            <article class="stat-card">
+              <span class="counter" data-target="98">0</span>
+              <p>Clientes satisfechos</p>
+            </article>
+            <article class="stat-card">
+              <span class="counter" data-target="24">0</span>
+              <p>Atención rápida (horas)</p>
+            </article>
+            <article class="stat-card">
+              <span class="counter" data-target="5">0</span>
+              <p>Líneas de servicio</p>
+            </article>
+          </div>
         </div>
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-number">5+</span>
-            <span class="stat-label">Áreas de Servicio</span>
+
+        <aside class="hero-media reveal">
+          <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80"
+            alt="Equipo técnico realizando mantenimiento profesional" loading="eager">
+          <div class="media-float-card">
+            <h3>Rango de inversión</h3>
+            <p>$8,000 a $15,000 MXN</p>
+            <small>Escalable según alcance y tiempos de entrega</small>
           </div>
-          <div class="stat">
-            <span class="stat-number">$8k–$15k</span>
-            <span class="stat-label">Rango Típico MXN</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">24/7</span>
-            <span class="stat-label">Disponibilidad</span>
-          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="trust-strip section-soft reveal">
+      <div class="container trust-grid">
+        <p>✔ Trabajo garantizado</p>
+        <p>✔ Facturación disponible</p>
+        <p>✔ Pagos con tarjeta, transferencia y efectivo</p>
+        <p>✔ Atención en tu ciudad y alrededores</p>
+      </div>
+    </section>
+
+    <section class="section-pad" id="soluciones-home">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Cobertura integral</p>
+          <h2>Servicios pensados para resolver de principio a fin</h2>
+          <p>Diseñamos cada alcance para que tu inversión se traduzca en operación, seguridad y buena imagen.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <img src="https://images.unsplash.com/photo-1621905252472-e8a5e56f6f88?auto=format&fit=crop&w=900&q=80"
+              alt="Servicio de aire acondicionado">
+            <div>
+              <h3>Climatización</h3>
+              <p>Instalación, mantenimiento, recarga de gas y diagnóstico completo de sistemas.</p>
+            </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80"
+              alt="Trabajo de herrería profesional">
+            <div>
+              <h3>Herrería</h3>
+              <p>Estructuras metálicas, puertas, protecciones y fabricación a medida con acabados robustos.</p>
+            </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80"
+              alt="Trabajos de albañilería y remodelación">
+            <div>
+              <h3>Albañilería y remodelación</h3>
+              <p>Ampliaciones, acabados, pisos y reparaciones funcionales para hogar o negocio.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="center-actions reveal">
+          <a href="servicios.html" class="btn btn-secondary">Explorar catálogo completo</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SERVICIOS -->
-  <section class="servicios" id="servicios">
-    <div class="container">
-      <h2 class="section-title">Nuestros Servicios</h2>
-      <p class="section-subtitle">Cobertura integral en soluciones técnicas para tu negocio</p>
-
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">❄️</div>
-          <h3>Climatización</h3>
-          <p>Instalación, mantenimiento preventivo y correctivo de sistemas de aire acondicionado para oficinas,
-            comercios e inmuebles.</p>
-          <ul class="service-list">
-            <li>Instalación profesional</li>
-            <li>Mantenimiento preventivo</li>
-            <li>Reparaciones rápidas</li>
-          </ul>
+    <section class="section-pad section-soft" id="metodo">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Método de trabajo</p>
+          <h2>Un proceso simple, transparente y sin sorpresas</h2>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon">🔧</div>
-          <h3>Herrería</h3>
-          <p>Fabricación e instalación de estructuras metálicas con precisión industrial y acabado robusto.</p>
-          <ul class="service-list">
-            <li>Diseño personalizado</li>
-            <li>Fabricación precisa</li>
-            <li>Instalación garantizada</li>
-          </ul>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">🏗️</div>
-          <h3>Albañilería</h3>
-          <p>Remodelaciones, reparaciones y obra menor. Adecuaciones funcionales dentro de casas, naves y negocios.</p>
-          <ul class="service-list">
-            <li>Remodelación completa</li>
-            <li>Obra menor</li>
-            <li>Acabados de calidad</li>
-          </ul>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">🛠️</div>
-          <h3>Mantenimiento General</h3>
-          <p>Mantenimiento preventivo y correctivo de instalaciones, equipos y sistemas en funcionamiento.</p>
-          <ul class="service-list">
-            <li>Inspecciones regulares</li>
-            <li>Mantenimiento programado</li>
-            <li>Atención de emergencias</li>
-          </ul>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">⚡</div>
-          <h3>Soluciones Integradas</h3>
-          <p>Proyectos complejos que combinan múltiples áreas: clima + estructura + funcionalidad.</p>
-          <ul class="service-list">
-            <li>Proyectos llave en mano</li>
-            <li>Coordinación integral</li>
-            <li>Garantía total</li>
-          </ul>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">📋</div>
-          <h3>Consultoría Técnica</h3>
-          <p>Asesoría profesional para optimizar tus sistemas, reducir costos y mejorar eficiencia operativa.</p>
-          <ul class="service-list">
-            <li>Diagnóstico completo</li>
-            <li>Propuestas de mejora</li>
-            <li>Implementación</li>
-          </ul>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span>01</span>
+            <h3>Diagnóstico</h3>
+            <p>Levantamiento técnico del espacio, riesgos y prioridades del cliente.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>02</span>
+            <h3>Propuesta y alcance</h3>
+            <p>Definimos entregables, inversión, tiempos de ejecución y garantías del servicio.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>03</span>
+            <h3>Ejecución técnica</h3>
+            <p>Equipo especializado en campo con supervisión y comunicación continua.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>04</span>
+            <h3>Entrega y seguimiento</h3>
+            <p>Validación final, recomendaciones y plan de mantenimiento preventivo.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CAPACIDADES -->
-  <section class="capacidades" id="capacidades">
-    <div class="container">
-      <h2 class="section-title">Por Qué Elegirnos</h2>
-
-      <div class="capacidades-grid">
-        <div class="capacidad-item">
-          <h3>Profesionalismo Premium</h3>
-          <p>Cada proyecto recibe atención de expertos con años de experiencia en infraestructura y soluciones técnicas
-            complejas.</p>
+    <section class="section-pad cta-block reveal">
+      <div class="container cta-inner">
+        <div>
+          <p class="eyebrow">¿Listo para empezar?</p>
+          <h2>Te entregamos una propuesta digna de tu inversión.</h2>
+          <p>Si tu rango es de $8,000 a $15,000 MXN, armamos un plan con prioridades, tiempos y resultados claros.</p>
         </div>
-        <div class="capacidad-item">
-          <h3>Ejecución Garantizada</h3>
-          <p>Cumplimos plazos, presupuestos y especificaciones. Tu confianza es nuestra reputación.</p>
-        </div>
-        <div class="capacidad-item">
-          <h3>Soporte Continuo</h3>
-          <p>Mantenimiento preventivo, asesoría post-proyecto y disponibilidad 24/7 para emergencias.</p>
-        </div>
-        <div class="capacidad-item">
-          <h3>Soluciones Escalables</h3>
-          <p>Desde proyectos pequeños hasta integraciones complejas. Crecemos con tus necesidades.</p>
-        </div>
+        <a href="contacto.html#formulario" class="btn btn-primary">Quiero mi propuesta</a>
       </div>
+    </section>
+  </main>
 
-      <div class="pricing-preview">
-        <h3>Rango de Inversión Típica</h3>
-        <div class="price-range">
-          <div class="price-card">
-            <p class="price-label">Proyectos Básicos</p>
-            <p class="price-value">$8,000–$10,000 MXN</p>
-          </div>
-          <div class="price-card">
-            <p class="price-label">Proyectos Estándar</p>
-            <p class="price-value">$10,000–$12,500 MXN</p>
-          </div>
-          <div class="price-card">
-            <p class="price-label">Proyectos Premium</p>
-            <p class="price-value">$12,500–$15,000 MXN</p>
-          </div>
-        </div>
-        <p class="pricing-note">*Presupuesto personalizado según especificaciones del proyecto</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACTO -->
-  <section class="contacto" id="contacto">
-    <div class="container">
-      <h2 class="section-title">Inicia Tu Proyecto Hoy</h2>
-      <p class="section-subtitle">Solicita una consulta gratuita y te haremos una propuesta personalizada</p>
-
-      <form class="contact-form" id="contactForm">
-        <div class="form-group">
-          <label for="nombre">Nombre Completo</label>
-          <input type="text" id="nombre" name="nombre" required>
-        </div>
-
-        <div class="form-group">
-          <label for="empresa">Empresa</label>
-          <input type="text" id="empresa" name="empresa">
-        </div>
-
-        <div class="form-group">
-          <label for="email">Correo Electrónico</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-
-        <div class="form-group">
-          <label for="telefono">Teléfono</label>
-          <input type="tel" id="telefono" name="telefono">
-        </div>
-
-        <div class="form-group">
-          <label for="servicio">Tipo de Servicio</label>
-          <select id="servicio" name="servicio" required>
-            <option value="">-- Selecciona un servicio --</option>
-            <option value="climatizacion">Climatización</option>
-            <option value="herreria">Herrería</option>
-            <option value="albanileria">Albañilería</option>
-            <option value="mantenimiento">Mantenimiento General</option>
-            <option value="integrado">Solución Integrada</option>
-            <option value="consultoria">Consultoría Técnica</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="descripcion">Descripción del Proyecto</label>
-          <textarea id="descripcion" name="descripcion" rows="5"
-            placeholder="Cuéntanos sobre tu proyecto..."></textarea>
-        </div>
-
-        <div class="form-group">
-          <label for="urgencia">Urgencia</label>
-          <div class="urgencia-options">
-            <label><input type="radio" name="urgencia" value="normal" checked> Normal</label>
-            <label><input type="radio" name="urgencia" value="rapido"> Rápido</label>
-            <label><input type="radio" name="urgencia" value="urgente"> Urgente</label>
-          </div>
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-large">Enviar Propuesta</button>
-        <p class="form-note">O llama directamente: <strong>+52 (555) 123-4567</strong></p>
-      </form>
-
-      <div class="contact-info">
-        <h3>Otras Formas de Contactarnos</h3>
-        <p>📧 <strong>Email:</strong> info@rgmedium.com.mx</p>
-        <p>📱 <strong>WhatsApp:</strong> +52 (555) 987-6543</p>
-        <p>📍 <strong>Ubicación:</strong> Ciudad de México, CDMX</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
-      <p>&copy; <span id="year">2024</span> RG Medium. Todos los derechos reservados.</p>
-      <p>Infraestructura • Soluciones Técnicas • Confianza</p>
+    <div class="container footer-grid">
+      <div>
+        <h3>RG Medium</h3>
+        <p>Infraestructura • Soluciones Técnicas • Confianza</p>
+      </div>
+      <div>
+        <h4>Explorar</h4>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div>
+        <h4>Contacto directo</h4>
+        <p>📲 984 130 3765</p>
+        <p>📍 Atención local y alrededores</p>
+      </div>
     </div>
+    <p class="copyright">© <span id="year">2026</span> RG Medium. Todos los derechos reservados.</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="script.js"></script>
 </body>
 
