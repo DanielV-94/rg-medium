@@ -2,7 +2,7 @@
 
 Página web profesional para RG Medium (Infraestructura y Soluciones Técnicas) sin dependencias externas.
 
-## 📂 Estructura
+## 📂 EstructuraA
 
 ```
 RG-MEDIUM-SIMPLE/
@@ -53,21 +53,25 @@ RG-MEDIUM-SIMPLE/
 ## 🔧 Personalización
 
 ### Cambiar Colores
+
 Edita las variables en `styles.css`:
+
 ```css
 :root {
-  --primary: #d4af37;    /* Dorado */
-  --dark: #0a0e27;       /* Azul oscuro */
-  --accent: #ff6b6b;     /* Rojo */
+  --primary: #d4af37; /* Dorado */
+  --dark: #0a0e27; /* Azul oscuro */
+  --accent: #ff6b6b; /* Rojo */
 }
 ```
 
 ### Cambiar Contenido
+
 - Edita el texto directo en `index.html`
 - Cambia los servicios en la sección `.services-grid`
 - Personaliza la información de contacto
 
 ### Cambiar Estilos
+
 - Modifica `styles.css` según necesites
 - Usa las clases existentes para mantener consistencia
 
@@ -82,6 +86,7 @@ Edita las variables en `styles.css`:
 El formulario guarda datos en `localStorage` del navegador para demo.
 
 **Para producción, integra con:**
+
 - Formspree
 - EmailJS
 - Tu backend personalizado
@@ -89,6 +94,7 @@ El formulario guarda datos en `localStorage` del navegador para demo.
 ## 📊 Plantilla de Contacto
 
 Estructura del objeto enviado:
+
 ```javascript
 {
   nombre: "Juan Pérez",
@@ -105,6 +111,7 @@ Estructura del objeto enviado:
 ## 🌐 Despliegue
 
 ### Opción 1: GitHub Pages (Gratis)
+
 ```bash
 git init
 git add .
@@ -114,9 +121,11 @@ git push -u origin main
 ```
 
 ### Opción 2: Netlify (Gratis)
+
 Arrastra la carpeta a netlify.com
 
 ### Opción 3: Servidor Propio
+
 Sube los 3 archivos por FTP
 
 ## ✅ Checklist Pre-Lanzamiento

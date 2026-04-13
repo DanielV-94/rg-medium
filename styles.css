@@ -12,7 +12,7 @@
   --text: #e0e0e0;
   --text-dim: #a0a0a0;
   --border: #2a2f4a;
-  --accent: #ff6b6b;
+  --accent: #ee1212ff;
 }
 
 html {
@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--dark);
   color: var(--text);
   line-height: 1.6;
@@ -85,7 +85,7 @@ body {
 }
 
 .nav-link.active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -301,7 +301,7 @@ body {
 }
 
 .service-list li::before {
-  content: '✓ ';
+  content: "✓ ";
   color: var(--primary);
   font-weight: bold;
   margin-right: 0.5rem;
