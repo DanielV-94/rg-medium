@@ -1,23 +1,27 @@
 # 📋 PROPUESTA REDISEÑADA - RG MEDIUM
+
 ## Entrega Premium Multipágina con Logo e Identidad Visual Corporativa
 
 **Fecha:** Abril 2026  
 **Estado:** ✅ Completado y funcional  
-**Inversión cliente:** $8,000 - $15,000 MXN  
+**Inversión cliente:** $8,000 - $15,000 MXN
 
 ---
 
 ## 🎯 Resumen de cambios realizados
 
 ### 1. Integración del Logo Corporativo ✓
+
 - Reemplazado logo genérico (brand-mark SVG) con **logo real** de la carpeta `/LOGO/logo (1).png`
 - Logo integrado en todas 4 páginas del sitio (header de navegación)
 - Optimización: responsive y escalable en todos los dispositivos
 
 ### 2. Paleta de Colores Adaptada ✓
+
 Se actualizó la paleta cromática del sitio para complementar el logo corporativo:
 
 **Colores principales:**
+
 - **Azul Corporativo:** `#2563eb` (primary) → usado en botones, CTA, acentos
 - **Azul Claro:** `#3b82f6` (primary-light) → hover states y elementos destacados
 - **Azul Oscuro:** `#1e40af` (primary-dark) → para profundidad
@@ -25,6 +29,7 @@ Se actualizó la paleta cromática del sitio para complementar el logo corporati
 - **Fondo Principal:** `#0a1428` → oscuro profesional con contraste
 
 **Impacto visual:**
+
 - Logo, botones y elementos principales ahora usan la paleta coherente
 - Gradientes azules en CTA primarios
 - Líneas y bordes adaptadas al nuevo scheme
@@ -33,6 +38,7 @@ Se actualizó la paleta cromática del sitio para complementar el logo corporati
 ### 3. Estructura Multipágina (4 páginas) ✓
 
 #### 📄 `index.html` - Home / Landing
+
 - Hero con propuesta de valor
 - Métricas animadas (counters)
 - 3 servicios principales con imágenes
@@ -40,17 +46,20 @@ Se actualizó la paleta cromática del sitio para complementar el logo corporati
 - CTA final: "Quiero mi propuesta"
 
 #### 📄 `servicios.html` - Catálogo Completo
+
 - Catálogo de 4 líneas de servicio
 - 3 paquetes de precios: Esencial, Integral (destacado), Premium
 - FAQ interactiva (6 preguntas)
 - Links directos a contacto
 
 #### 📄 `proyectos.html` - Portfolio
+
 - KPI animados (120+ servicios, 96% recurrentes)
 - 3 casos de éxito con detalles
 - Bloque final CTA para conversión
 
 #### 📄 `contacto.html` - Formulario + Contacto
+
 - Formulario completo con validación
 - Campos: nombre, empresa, email, teléfono, servicio, presupuesto, descripción
 - Almacenamiento en `localStorage`
@@ -59,18 +68,21 @@ Se actualizó la paleta cromática del sitio para complementar el logo corporati
 ### 4. Animaciones y Microinteracciones ✓
 
 **GSAP + ScrollTrigger (CDN):**
+
 - Animaciones de entrada suave en secciones
 - Reveal effects al hacer scroll
 - Counters animados (98 → 24 → 5)
 - Transiciones fluidas en botones
 
 **Menú Móvil:**
+
 - Hamburger menu funcional en `<= 820px`
 - Aria-expanded para accesibilidad
 - Cierre automático al seleccionar link
 - Posicionamiento absoluto con overlay
 
 **Barra de Progreso:**
+
 - Scroll progress bar superior
 - Actualización en tiempo real
 - Gradiente dorado ↔ verde
@@ -78,6 +90,7 @@ Se actualizó la paleta cromática del sitio para complementar el logo corporati
 ### 5. Responsividad Robusta ✓
 
 **Media Queries implementados:**
+
 ```
 ✓ @media (max-width: 1100px)  → Grid 2 columnas
 ✓ @media (max-width: 820px)   → Menú móvil, stacking
@@ -86,6 +99,7 @@ Se actualizó la paleta cromática del sitio para complementar el logo corporati
 ```
 
 **Tested en:**
+
 - Desktop (1920x1080, 1366x768)
 - Tablet (820px)
 - Mobile (375x667 iPhone SE, iPhone 14)
@@ -93,6 +107,7 @@ Se actualizó la paleta cromática del sitio para complementar el logo corporati
 ### 6. Imágenes de Alta Calidad ✓
 
 **Fuentes:** Unsplash - imágenes temáticas:
+
 - Mantenimiento técnico (hero)
 - Climatización
 - Herrería
@@ -104,6 +119,7 @@ Todas con `alt text` descriptivo y lazy loading optimizado.
 ### 7. Formulario Funcional ✓
 
 **Campos:**
+
 - Nombre completo (required)
 - Empresa (opcional)
 - Email (required)
@@ -113,6 +129,7 @@ Todas con `alt text` descriptivo y lazy loading optimizado.
 - Descripción proyecto (textarea)
 
 **Almacenamiento:**
+
 ```javascript
 localStorage → rgmediumSubmissions
 {
@@ -155,12 +172,14 @@ rg-medium/
 ## 🚀 Cómo usar la propuesta
 
 ### Local
+
 1. Abre `index.html` en navegador
 2. Navega entre páginas con enlaces del header
 3. Prueba el formulario en `contacto.html`
 4. Inspecciona `localStorage` para ver datos guardados
 
 ### Deploy a producción
+
 ```bash
 # Opción 1: GitHub Pages
 git push origin main
@@ -176,20 +195,20 @@ Sube los 4 HTML + CSS + JS a servidor via FTP
 
 ## ✨ Características Premium Entregadas
 
-| Característica | Estado |
-|---|---|
-| 4 páginas HTML funcionales | ✅ |
-| Logo corporativo integrado | ✅ |
-| Paleta adaptada a logo | ✅ |
-| Animaciones GSAP/ScrollTrigger | ✅ |
-| Menú móvil responsivo | ✅ |
-| Formulario con validación | ✅ |
-| Imágenes profesionales | ✅ |
-| Barra de scroll progress | ✅ |
-| Counters animados | ✅ |
-| Media queries robustas | ✅ |
-| Accesibilidad WCAG | ✅ |
-| Sin dependencias npm | ✅ |
+| Característica                 | Estado |
+| ------------------------------ | ------ |
+| 4 páginas HTML funcionales     | ✅     |
+| Logo corporativo integrado     | ✅     |
+| Paleta adaptada a logo         | ✅     |
+| Animaciones GSAP/ScrollTrigger | ✅     |
+| Menú móvil responsivo          | ✅     |
+| Formulario con validación      | ✅     |
+| Imágenes profesionales         | ✅     |
+| Barra de scroll progress       | ✅     |
+| Counters animados              | ✅     |
+| Media queries robustas         | ✅     |
+| Accesibilidad WCAG             | ✅     |
+| Sin dependencias npm           | ✅     |
 
 ---
 
@@ -197,12 +216,12 @@ Sube los 4 HTML + CSS + JS a servidor via FTP
 
 ```css
 :root {
-  --primary: #2563eb;        /* Azul corporativo */
-  --primary-light: #3b82f6;  /* Azul claro */
-  --primary-dark: #1e40af;   /* Azul oscuro */
-  --accent: #f97316;         /* Naranja */
-  --bg: #0a1428;             /* Fondo */
-  --text: #f1f5f9;           /* Texto */
+  --primary: #2563eb; /* Azul corporativo */
+  --primary-light: #3b82f6; /* Azul claro */
+  --primary-dark: #1e40af; /* Azul oscuro */
+  --accent: #f97316; /* Naranja */
+  --bg: #0a1428; /* Fondo */
+  --text: #f1f5f9; /* Texto */
 }
 ```
 
@@ -211,6 +230,7 @@ Sube los 4 HTML + CSS + JS a servidor via FTP
 ## 📱 Validación Mobile
 
 Testeado y funcional en:
+
 - iPhone SE (375x667)
 - iPhone 14 (390x844)
 - iPad (820x1180)
@@ -219,7 +239,7 @@ Testeado y funcional en:
 Menú hamburger ✓  
 Formulario completo ✓  
 Imágenes responsive ✓  
-Botones accesibles ✓  
+Botones accesibles ✓
 
 ---
 
@@ -250,7 +270,7 @@ Botones accesibles ✓
 **Calidad:** Nivel profesional/corporativo ✓  
 **Animaciones:** Premium con GSAP ✓  
 **Responsividad:** Tested múltiples dispositivos ✓  
-**Funcionalidad:** 100% operativo sin dependencias externas ✓  
+**Funcionalidad:** 100% operativo sin dependencias externas ✓
 
 ---
 
