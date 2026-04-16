@@ -1,208 +1,215 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="es-MX">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RG Medium | Soluciones Técnicas Premium</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RG Impermeabilizaciones y Pintura</title>
   <meta name="description"
-    content="RG Medium: climatización, herrería, albañilería y mantenimiento integral para hogares y negocios con ejecución profesional.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    content="RG Impermeabilizaciones y Pintura: albañilería, herrería, mantenimiento general, pintura y servicio de aires acondicionados para hogar y negocio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 
-<body data-page="inicio">
-  <div class="scroll-progress" aria-hidden="true"></div>
-
-  <header class="header">
-    <div class="container header-content">
-      <a href="index.html" class="brand">
-        <img src="LOGO/logo (1).png" alt="RG Medium Logo" class="brand-logo">
-        <span>
-          <strong>RG Medium</strong>
-          <small>Infraestructura & Soluciones Técnicas</small>
-        </span>
+<body>
+  <header class="site-header" id="inicio">
+    <div class="container nav-wrap">
+      <a href="#inicio" class="brand" aria-label="Ir al inicio">
+        <img src="./LOGO/logo (1).png" alt="Logo RG Impermeabilizaciones y Pintura" />
+        <span>RG Impermeabilizaciones y Pintura</span>
       </a>
 
-      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menú</button>
 
-      <nav class="nav" id="mainNav">
-        <a href="index.html" class="nav-link" data-page="inicio">Inicio</a>
-        <a href="servicios.html" class="nav-link" data-page="servicios">Servicios</a>
-        <a href="proyectos.html" class="nav-link" data-page="proyectos">Proyectos</a>
-        <a href="contacto.html" class="nav-link" data-page="contacto">Contacto</a>
-        <a href="contacto.html#formulario" class="btn btn-primary nav-cta">Cotizar ahora</a>
+      <nav id="mainNav" class="main-nav">
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#contacto">Contacto</a>
       </nav>
+
+      <a href="https://wa.me/529841303765" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Cotizar
+        por WhatsApp</a>
     </div>
   </header>
 
   <main>
-    <section class="hero section-pad">
-      <div class="container hero-layout">
+    <section class="hero">
+      <img src="./INFO/GENERAL.jpeg" alt="Trabajo profesional de mantenimiento y remodelación" class="hero-bg" />
+      <div class="hero-overlay"></div>
+      <div class="container hero-content reveal">
+        <p class="eyebrow">Servicio profesional para hogar y negocio</p>
+        <h1>Tu hogar o negocio en manos de expertos.</h1>
+        <p>
+          En <strong>RG Impermeabilizaciones y Pintura</strong> trabajamos con calidad, rapidez y responsabilidad.
+          Atendemos albañilería, herrería, mantenimiento general y aires acondicionados.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/529841303765" target="_blank"
+            rel="noopener noreferrer">Solicitar
+            cotización</a>
+          <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats-grid">
+        <article class="stat-card reveal">
+          <h2 data-count="6">0</h2>
+          <p>Áreas de servicio</p>
+        </article>
+        <article class="stat-card reveal">
+          <h2 data-count="100">0</h2>
+          <p>Compromiso con la calidad</p>
+        </article>
+        <article class="stat-card reveal">
+          <h2 data-count="4">0</h2>
+          <p>Métodos de pago</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="servicios">
+      <div class="section-head reveal">
+        <p class="eyebrow">Nuestros servicios</p>
+        <h2>Soluciones integrales para tu propiedad</h2>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <img src="./INFO/ALBAÑILERIA.jpeg" alt="Servicio de albañilería" loading="lazy" />
+          <div>
+            <h3>Albañilería</h3>
+            <ul>
+              <li>Construcción, ampliaciones y remodelaciones</li>
+              <li>Levantado de muros y bardas</li>
+              <li>Pisos, azulejos, repellados y acabados</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <img src="./INFO/HERRERIA.jpeg" alt="Servicio de herrería" loading="lazy" />
+          <div>
+            <h3>Herrería</h3>
+            <ul>
+              <li>Portones, escaleras, barandales y protecciones</li>
+              <li>Puertas y ventanas metálicas</li>
+              <li>Reparaciones y mantenimiento</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <img src="./INFO/MANTENIMIENTO GENERAL.jpeg" alt="Mantenimiento general" loading="lazy" />
+          <div>
+            <h3>Mantenimiento general</h3>
+            <ul>
+              <li>Impermeabilización, pintura y plomería</li>
+              <li>Electricidad, lavado de tinacos y tuberías</li>
+              <li>Construcción y remodelaciones</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <img src="./INFO/AIRE-ACONDICIONADO.jpeg" alt="Mantenimiento de aire acondicionado" loading="lazy" />
+          <div>
+            <h3>Aires acondicionados</h3>
+            <ul>
+              <li>Mantenimiento y limpieza</li>
+              <li>Recarga de gas y reparación de fugas</li>
+              <li>Instalación y ajuste de equipos</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="galeria">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Galería de trabajos</p>
+          <h2>Experiencia real en campo</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <img class="reveal" src="./media/albañileria (1).jpeg" alt="Trabajo de albañilería" loading="lazy" />
+          <img class="reveal" src="./media/remodelacion (2).jpeg" alt="Trabajo de remodelación" loading="lazy" />
+          <img class="reveal" src="./media/herreria (1).jpeg" alt="Trabajo de herrería" loading="lazy" />
+          <img class="reveal" src="./media/plomeria (2).jpeg" alt="Trabajo de plomería" loading="lazy" />
+          <img class="reveal" src="./media/pintura (4).jpeg" alt="Trabajo de pintura" loading="lazy" />
+          <img class="reveal" src="./media/aires (3).jpeg" alt="Servicio de aire acondicionado" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="proceso">
+      <div class="section-head reveal">
+        <p class="eyebrow">Cómo trabajamos</p>
+        <h2>Atención rápida y trabajo garantizado</h2>
+      </div>
+
+      <div class="steps-grid">
+        <article class="step reveal">
+          <span>01</span>
+          <h3>Contacto</h3>
+          <p>Te atendemos por llamada o WhatsApp para entender lo que necesitas.</p>
+        </article>
+        <article class="step reveal">
+          <span>02</span>
+          <h3>Cotización</h3>
+          <p>Recibes una propuesta clara, sin compromiso y ajustada a tu proyecto.</p>
+        </article>
+        <article class="step reveal">
+          <span>03</span>
+          <h3>Ejecución</h3>
+          <p>Realizamos los trabajos con calidad, rapidez y responsabilidad.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <div class="container contact-card reveal">
+        <div class="contact-brand">
+          <img src="./LOGO/logo (2).png" alt="Logo RG" />
+        </div>
         <div>
-          <p class="eyebrow reveal">Soluciones técnicas de nivel profesional</p>
-          <h1 class="hero-title reveal">Tu proyecto en manos expertas, con ejecución real y garantía.</h1>
-          <p class="hero-copy reveal">
-            Integramos climatización, herrería, albañilería y mantenimiento general en propuestas claras, medibles y
-            con tiempos definidos para hogar y negocio.
+          <p class="eyebrow">Solicita tu cotización sin compromiso</p>
+          <h2>Atendemos en tu ciudad y alrededores</h2>
+          <p class="contact-copy">
+            Trabajo garantizado · Atención rápida · Facturamos
           </p>
-          <div class="hero-actions reveal">
-            <a href="contacto.html#formulario" class="btn btn-primary">Solicitar propuesta</a>
-            <a href="proyectos.html" class="btn btn-ghost">Ver proyectos</a>
+
+          <div class="contact-list">
+            <p><strong>Teléfono / WhatsApp:</strong> <a href="tel:+529841303765">984 130 3765</a></p>
+            <p><strong>Métodos de pago:</strong> Tarjeta bancaria, transferencia, efectivo y factura.</p>
           </div>
 
-          <div class="stats-grid reveal">
-            <article class="stat-card">
-              <span class="counter" data-target="98">0</span>
-              <p>Clientes satisfechos</p>
-            </article>
-            <article class="stat-card">
-              <span class="counter" data-target="24">0</span>
-              <p>Atención rápida (horas)</p>
-            </article>
-            <article class="stat-card">
-              <span class="counter" data-target="5">0</span>
-              <p>Líneas de servicio</p>
-            </article>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/529841303765" target="_blank"
+              rel="noopener noreferrer">Enviar
+              mensaje</a>
+            <a class="btn btn-ghost" href="tel:+529841303765">Llamar ahora</a>
           </div>
         </div>
-
-        <aside class="hero-media reveal">
-          <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80"
-            alt="Equipo técnico realizando mantenimiento profesional" loading="eager">
-          <div class="media-float-card">
-            <h3>Rango de inversión</h3>
-            <p>$8,000 a $15,000 MXN</p>
-            <small>Escalable según alcance y tiempos de entrega</small>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="trust-strip section-soft reveal">
-      <div class="container trust-grid">
-        <p>✔ Trabajo garantizado</p>
-        <p>✔ Facturación disponible</p>
-        <p>✔ Pagos con tarjeta, transferencia y efectivo</p>
-        <p>✔ Atención en tu ciudad y alrededores</p>
-      </div>
-    </section>
-
-    <section class="section-pad" id="soluciones-home">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Cobertura integral</p>
-          <h2>Servicios pensados para resolver de principio a fin</h2>
-          <p>Diseñamos cada alcance para que tu inversión se traduzca en operación, seguridad y buena imagen.</p>
-        </div>
-
-        <div class="feature-grid">
-          <article class="feature-card reveal">
-            <img src="https://images.unsplash.com/photo-1621905252472-e8a5e56f6f88?auto=format&fit=crop&w=900&q=80"
-              alt="Servicio de aire acondicionado">
-            <div>
-              <h3>Climatización</h3>
-              <p>Instalación, mantenimiento, recarga de gas y diagnóstico completo de sistemas.</p>
-            </div>
-          </article>
-
-          <article class="feature-card reveal">
-            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80"
-              alt="Trabajo de herrería profesional">
-            <div>
-              <h3>Herrería</h3>
-              <p>Estructuras metálicas, puertas, protecciones y fabricación a medida con acabados robustos.</p>
-            </div>
-          </article>
-
-          <article class="feature-card reveal">
-            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80"
-              alt="Trabajos de albañilería y remodelación">
-            <div>
-              <h3>Albañilería y remodelación</h3>
-              <p>Ampliaciones, acabados, pisos y reparaciones funcionales para hogar o negocio.</p>
-            </div>
-          </article>
-        </div>
-
-        <div class="center-actions reveal">
-          <a href="servicios.html" class="btn btn-secondary">Explorar catálogo completo</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad section-soft" id="metodo">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Método de trabajo</p>
-          <h2>Un proceso simple, transparente y sin sorpresas</h2>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <span>01</span>
-            <h3>Diagnóstico</h3>
-            <p>Levantamiento técnico del espacio, riesgos y prioridades del cliente.</p>
-          </article>
-          <article class="timeline-item reveal">
-            <span>02</span>
-            <h3>Propuesta y alcance</h3>
-            <p>Definimos entregables, inversión, tiempos de ejecución y garantías del servicio.</p>
-          </article>
-          <article class="timeline-item reveal">
-            <span>03</span>
-            <h3>Ejecución técnica</h3>
-            <p>Equipo especializado en campo con supervisión y comunicación continua.</p>
-          </article>
-          <article class="timeline-item reveal">
-            <span>04</span>
-            <h3>Entrega y seguimiento</h3>
-            <p>Validación final, recomendaciones y plan de mantenimiento preventivo.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad cta-block reveal">
-      <div class="container cta-inner">
-        <div>
-          <p class="eyebrow">¿Listo para empezar?</p>
-          <h2>Te entregamos una propuesta digna de tu inversión.</h2>
-          <p>Si tu rango es de $8,000 a $15,000 MXN, armamos un plan con prioridades, tiempos y resultados claros.</p>
-        </div>
-        <a href="contacto.html#formulario" class="btn btn-primary">Quiero mi propuesta</a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <h3>RG Medium</h3>
-        <p>Infraestructura • Soluciones Técnicas • Confianza</p>
-      </div>
-      <div>
-        <h4>Explorar</h4>
-        <a href="servicios.html">Servicios</a>
-        <a href="proyectos.html">Proyectos</a>
-        <a href="contacto.html">Contacto</a>
-      </div>
-      <div>
-        <h4>Contacto directo</h4>
-        <p>📲 984 130 3765</p>
-        <p>📍 Atención local y alrededores</p>
-      </div>
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> RG Impermeabilizaciones y Pintura. Todos los derechos reservados.</p>
+      <a href="#inicio">Volver arriba ↑</a>
     </div>
-    <p class="copyright">© <span id="year">2026</span> RG Medium. Todos los derechos reservados.</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
