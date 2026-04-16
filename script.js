@@ -1,5 +1,6 @@
 const menuBtn = document.getElementById("menuBtn");
 const mainNav = document.getElementById("mainNav");
+const siteHeader = document.querySelector(".site-header");
 
 if (menuBtn && mainNav) {
   menuBtn.addEventListener("click", () => {
@@ -14,6 +15,14 @@ if (menuBtn && mainNav) {
     });
   });
 }
+
+window.addEventListener(
+  "scroll",
+  () => {
+    siteHeader?.classList.toggle("is-scrolled", window.scrollY > 10);
+  },
+  { passive: true },
+);
 
 const revealNodes = document.querySelectorAll(".reveal");
 
@@ -34,6 +43,7 @@ const counterNodes = document.querySelectorAll("[data-count]");
 
 const animateCounter = (el) => {
   const target = Number(el.dataset.count || 0);
+  const suffix = el.dataset.suffix ?? "";
   if (!target) return;
 
   const duration = 1100;
@@ -43,8 +53,7 @@ const animateCounter = (el) => {
     const progress = Math.min((now - start) / duration, 1);
     const ease = 1 - Math.pow(1 - progress, 3);
     const value = Math.round(target * ease);
-    el.textContent =
-      value.toLocaleString("es-MX") + (target >= 100 ? "%" : "+");
+    el.textContent = value.toLocaleString("es-MX") + suffix;
 
     if (progress < 1) {
       requestAnimationFrame(run);
@@ -67,6 +76,16 @@ const counterObserver = new IntersectionObserver(
 );
 
 counterNodes.forEach((node) => counterObserver.observe(node));
+
+document.querySelectorAll(".faq-question").forEach((button) => {
+  button.addEventListener("click", () => {
+    const item = button.closest(".faq-item");
+    if (!item) return;
+
+    const isOpen = item.classList.toggle("is-open");
+    button.setAttribute("aria-expanded", String(isOpen));
+  });
+});
 
 const yearNode = document.getElementById("year");
 if (yearNode) {
